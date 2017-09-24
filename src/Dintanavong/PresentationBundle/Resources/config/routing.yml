@@ -1,0 +1,6 @@
+dintanavong_presentation_homepage:
+    path:     /
+    defaults: { _controller: DintanavongPresentationBundle:Index:index }
+contact_page:
+    path:    /contact
+    defaults: { _controller: DintanavongPresentationBundle:Contact:index }
