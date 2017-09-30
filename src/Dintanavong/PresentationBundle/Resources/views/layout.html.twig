@@ -7,11 +7,28 @@
 </head>
 <body>
 {% block body %}
-<div class="container">
-
-
+    <div class="row">
+        <div class="col s12">
+            <nav class="nav-extended">
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab"><a href="#test1">Accueil</a></li>
+                        <li class="tab"><a class="active" href="#test2">Services</a></li>
+                        <li class="tab"><a href="#test3">A propos de moi</a></li>
+                        <li class="tab"><a href="#test4">Mes projets</a></li>
+                        <li class="tab right"><a href="#test5">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="test1" class="col s12">Test 1</div>
+            <div id="test2" class="col s12">Test 2</div>
+            <div id="test3" class="col s12">Test 3</div>
+            <div id="test4" class="col s12">Test 4</div>
+            <div id="test5" class="col s12">Test 5</div>
+        </div>
+    </div>
 {% endblock %}
-</div>
+
 <script src="{{ asset('jquery-3.2.1.min.js') }}"></script>
 <script src="{{ asset('materialize/js/materialize.min.js') }}"></script>
 </body>
