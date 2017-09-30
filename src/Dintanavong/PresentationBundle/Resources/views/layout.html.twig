@@ -4,32 +4,56 @@
     <meta charset="utf-8">
     <title>{% block title %}DINTANAVONG{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('materialize/css/materialize.min.css') }}"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('style.css') }}"/>
 </head>
 <body>
 {% block body %}
-    <div class="row">
+    <div class="row" style="margin: 0 !important;">
         <div class="col s12">
-            <nav class="nav-extended">
+            <!-- Menu -->
+            <nav class="nav-extended black">
                 <div class="nav-content">
                     <ul class="tabs tabs-transparent">
-                        <li class="tab"><a href="#test1">Accueil</a></li>
-                        <li class="tab"><a class="active" href="#test2">Services</a></li>
-                        <li class="tab"><a href="#test3">A propos de moi</a></li>
-                        <li class="tab"><a href="#test4">Mes projets</a></li>
-                        <li class="tab right"><a href="#test5">Contact</a></li>
+                        <li class="tab"><a href="#accueil">Accueil</a></li>
+                        <li class="tab"><a href="#services">Services</a></li>
+                        <li class="tab"><a href="#aproposdemoi">A propos de moi</a></li>
+                        <li class="tab"><a href="#mesprojets">Mes projets</a></li>
+                        <li class="tab"><a href="#contact">Contact</a></li>
+                        <li class="tab right"><a href="#seconnecter" data-activates="slide-out" class="se_connecter"><i class="material-icons">menu</i></a></li>
                     </ul>
                 </div>
             </nav>
-            <div id="test1" class="col s12">Test 1</div>
-            <div id="test2" class="col s12">Test 2</div>
-            <div id="test3" class="col s12">Test 3</div>
-            <div id="test4" class="col s12">Test 4</div>
-            <div id="test5" class="col s12">Test 5</div>
+        </div>
+    </div>
+    <!-- Sidebar -->
+    <div class="row">
+        <div class="col s12">
+            <ul id="slide-out" class="side-nav">
+                <li><div class="user-view">
+                        <div class="background">
+                            <img src="https://static.pexels.com/photos/145939/pexels-photo-145939.jpeg">
+                        </div>
+                        <a href="#!user"><img class="circle" src="data:image/jpeg;base64,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"></a>
+                        <a href="#!name"><span class="white-text name">John Doe</span></a>
+                        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                    </div></li>
+                <li><a href="#!"><i class="material-icons">account_circle</i>Se connecter</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">Plus d'informations</a></li>
+                <li><a class="waves-effect" href="#!"><i class="material-icons">account_balance</i>Charte informatique</a></li>
+            </ul>
+            <!-- Different content when we click on tab panel -->
+            <div id="accueil" class="col s12"></div>
+            <div id="services" class="col s12"></div>
+            <div id="aproposdemoi" class="col s12"></div>
+            <div id="mesprojets" class="col s12"></div>
+            <div id="contact" class="col s12"></div>
         </div>
     </div>
 {% endblock %}
-
 <script src="{{ asset('jquery-3.2.1.min.js') }}"></script>
 <script src="{{ asset('materialize/js/materialize.min.js') }}"></script>
+<script src="{{ asset('script.js') }}"></script>
 </body>
 </html>
