@@ -1,3 +1,17 @@
 #menu_portfolio a:hover {
    width: 100% !important;
 }
+#se_connecter {
+    padding-right: 1%;
+}
+.materialboxed {
+    width: 100% !important;
+}
+#menu {
+    position:fixed;
+    right:0px;
+    bottom:0px;
+}
+.p_home {
+    opacity:0;
+}
