@@ -7,3 +7,7 @@ $('.carousel.carousel-slider').carousel({fullWidth: true});
 
 // Initialize collapse button
 $(".se_connecter").sideNav();
+
+$(document).ready(function(){
+    $('.parallax').parallax();
+});
