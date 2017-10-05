@@ -30,6 +30,18 @@ $(document).ready(function() {
         axis: 'y',
         trigger: 'hover'
     });
+    $("#card1").flip({
+        axis: 'y',
+        trigger: 'hover'
+    });
+    $("#card2").flip({
+        axis: 'y',
+        trigger: 'hover'
+    });
+    $("#card3").flip({
+        axis: 'y',
+        trigger: 'hover'
+    });
     $('#loader').delay(4000).fadeOut(500);
     $(".pages").delay(4000).fadeIn(4000);
     $("#footer").delay(5000).fadeIn(4000);
