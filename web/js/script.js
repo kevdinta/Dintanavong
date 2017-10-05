@@ -2,18 +2,15 @@
  * Created by DINTANAVONG on 30/09/2017.
  */
 
-// Display carousel
-$('.carousel.carousel-slider').carousel({fullWidth: true});
-
-// Initialize collapse button
-$(".se_connecter").sideNav();
-
 $(document).ready(function() {
+    $('.pages').hide();
+    $('#footer').hide();
+    // Display carousel
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
+    // Initialize collapse button
+    $(".se_connecter").sideNav();
     $('.parallax').parallax();
     $('.materialboxed').materialbox();
-
-
-
     //
     // /* Every time the window is scrolled ... */
     // $(window).scroll( function(){
@@ -29,10 +26,11 @@ $(document).ready(function() {
     //         }
     //     });
     // });
-
     $("#card").flip({
         axis: 'y',
         trigger: 'hover'
     });
-
+    $('#loader').delay(4000).fadeOut(500);
+    $(".pages").delay(4000).fadeIn(4000);
+    $("#footer").delay(5000).fadeIn(4000);
 });

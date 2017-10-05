@@ -14,10 +14,16 @@
 }
 
 .parallax-container {
-    height: 700px;
+    height: 600px;
 }
 
+#loader {
+    position: absolute; left: 50%; top: 50%;
+}
 
+#footer {
+   margin-top: 10%;
+}
 
 /* Fade */
 /*.p_home {*/

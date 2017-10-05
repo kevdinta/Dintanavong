@@ -10,10 +10,21 @@
 </head>
 <body>
 {% block body %}
+    <div class="preloader-wrapper big active" id="loader">
+        <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
     <div class="row" style="margin: 0 !important;">
         <div class="col s12 navbar-fixed">
             <!-- Menu -->
-            <nav id="menu_portfolio" class="light-blue lighten-2">
+            <nav id="menu_portfolio" class="light-blue lighten-1">
                 <div class="nav-wrapper">
                     <!-- Insert logo -->
                     <!-- <a href="#" class="brand-logo">Logo</a> -->
@@ -50,6 +61,33 @@
             </ul>
         </div>
     </div>
+{% endblock %}
+{% block footer %}
+<footer class="page-footer light-blue lighten-1" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
 {% endblock %}
 {% block scripts %}
 <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>

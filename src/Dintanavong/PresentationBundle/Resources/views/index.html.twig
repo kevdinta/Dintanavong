@@ -3,10 +3,13 @@
 {% block title %}{{ parent() }} - Index{% endblock %}
 {% block body %}
     {{ parent() }}
+
+    <div class="pages">
+
     <div class="row">
         <div class="col s12">
             <div class="parallax-container">
-                <div class="parallax"><img title="header" alt="header" src="https://static.pexels.com/photos/305213/pexels-photo-305213.png"></div>
+                <div class="parallax"><img title="header" alt="header" src="{{ asset('img/fantasy.jpg') }}"></div>
             </div>
         </div>
     </div>
@@ -28,9 +31,8 @@
                 <div class="col s2">
                     <img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Cisco_academy_logo.svg/1024px-Cisco_academy_logo.svg.png" title="cisco" alt="cisco"/>
                 </div>
-                <div class="col s4">
-                    <!-- Img inc
-                    <img title="3il" alt="3il" src="http://www.3il-academy.fr/site/wp-content/uploads/2016/02/logo-3il_academy.png"/> -->
+                <div class="col s2">
+                    <img title="lyon" alt="lyon" src="https://upload.wikimedia.org/wikipedia/fr/9/94/Ville_de_Lyon.svg"/>
                 </div>
             </div>
         </div>
@@ -83,7 +85,6 @@
         </div>
 
     </div>
-
     <!-- Element Showed -->
     <a id="menu" class="waves-effect waves-light btn btn-floating" onclick="$('.tap-target').tapTarget('open')" ><i class="material-icons">menu</i></a>
 
@@ -93,7 +94,14 @@
                 <h5>De nouvelles fonctionnalités</h5>
                 <p class="white-text">Ce site est en cours de développement, de nouvelles fonctionnalités apparaitront prochainement !</p>
             </div>
-        </div><div class="tap-target-wave" ><a class="btn btn-floating btn-large cyan tap-target-origin"><i class="material-icons">menu</i></a></div></div>
+        </div>
+        <div class="tap-target-wave" ><a class="btn btn-floating btn-large cyan tap-target-origin"><i class="material-icons">menu</i></a></div></div>
+    </div>
+{% endblock %}
+{% block footer %}
+    <div class="row">
+        {{ parent() }}
+    </div>
 {% endblock %}
 {% block scripts %}{{ parent() }}
     <script src="{{ asset('js/flip.js') }}"></script>
