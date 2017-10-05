@@ -1,7 +1,6 @@
 {% extends "DintanavongPresentationBundle::layout.html.twig" %}
 
 {% block title %}{{ parent() }} - Index{% endblock %}
-
 {% block body %}
     {{ parent() }}
     <div class="row">
@@ -30,7 +29,8 @@
                     <img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Cisco_academy_logo.svg/1024px-Cisco_academy_logo.svg.png" title="cisco" alt="cisco"/>
                 </div>
                 <div class="col s4">
-                    <img title="3il" alt="3il" src="http://www.3il-academy.fr/site/wp-content/uploads/2016/02/logo-3il_academy.png"/>
+                    <!-- Img inc
+                    <img title="3il" alt="3il" src="http://www.3il-academy.fr/site/wp-content/uploads/2016/02/logo-3il_academy.png"/> -->
                 </div>
             </div>
         </div>
@@ -50,6 +50,40 @@
             </p>
         </div>
     </div>
+    <div class="row container">
+        <div class="col s3">
+            <div id="card">
+                <div class="card front">
+                    <div class="card-image">
+                        <img src="https://cdna.artstation.com/p/assets/images/images/005/740/184/large/kristina-toxicpanda-0013.jpg?1493407098">
+                        <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+                <div class="card back">
+                    <div class="card-image">
+                        <img src="https://i.imgur.com/mmAm9EV.jpg">
+                        <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <!-- Element Showed -->
     <a id="menu" class="waves-effect waves-light btn btn-floating" onclick="$('.tap-target').tapTarget('open')" ><i class="material-icons">menu</i></a>
 
@@ -60,4 +94,7 @@
                 <p class="white-text">Ce site est en cours de développement, de nouvelles fonctionnalités apparaitront prochainement !</p>
             </div>
         </div><div class="tap-target-wave" ><a class="btn btn-floating btn-large cyan tap-target-origin"><i class="material-icons">menu</i></a></div></div>
+{% endblock %}
+{% block scripts %}{{ parent() }}
+    <script src="{{ asset('js/flip.js') }}"></script>
 {% endblock %}

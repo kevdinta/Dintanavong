@@ -5,8 +5,8 @@
     <title>{% block title %}DINTANAVONG{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('materialize/css/materialize.min.css') }}"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('style.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('animate.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/animate.css') }}"/>
 </head>
 <body>
 {% block body %}
@@ -51,8 +51,10 @@
         </div>
     </div>
 {% endblock %}
-<script src="{{ asset('jquery-3.2.1.min.js') }}"></script>
+{% block scripts %}
+<script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
 <script src="{{ asset('materialize/js/materialize.min.js') }}"></script>
-<script src="{{ asset('script.js') }}"></script>
+<script src="{{ asset('js/script.js') }}"></script>
+{% endblock %}
 </body>
 </html>

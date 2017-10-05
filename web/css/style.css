@@ -12,6 +12,14 @@
     right:0px;
     bottom:0px;
 }
-.p_home {
-    opacity:0;
+
+.parallax-container {
+    height: 700px;
 }
+
+
+
+/* Fade */
+/*.p_home {*/
+    /*opacity:0;*/
+/*}*/
