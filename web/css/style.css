@@ -22,10 +22,22 @@
 }
 
 #footer {
-   margin-top: 20%;
+   display: none;
+    margin-top: 20%;
 }
 
 /* Fade */
 /*.p_home {*/
     /*opacity:0;*/
 /*}*/
+
+.pages {
+   display: none;
+}
+
+body {
+    background-color: #fcfcfc;
+}
+.front .card-content {
+    border: 1px solid #dadada !important;
+}
