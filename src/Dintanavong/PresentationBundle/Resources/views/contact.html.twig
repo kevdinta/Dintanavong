@@ -3,6 +3,68 @@
 {% block body %}
     {{ parent() }}
     <div class="pages">
-
+        <div class="row container">
+            <form class="col s12" id="form" method="POST">
+                <div style="text-align: center;">
+                    <h1 style="font-size: 20px;">Contactez-nous pour des informations complémentaires.</h1>
+                </div>
+                <div class="row col s6">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">person</i>
+                            <input id="name" type="text" class="validate">
+                            <label for="name">Nom</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">work</i>
+                            <input id="society" type="text" class="validate">
+                            <label for="society">Société</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" type="email" class="validate">
+                            <label for="email" data-error="Adresse invalide" data-success="Adresse valide">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">subject</i>
+                            <select multiple>
+                                <option value="" disabled selected>Choisissez un ou plusieurs motifs</option>
+                                <option value="1">Partenariat</option>
+                                <option value="2">Services</option>
+                                <option value="3">Renseignements</option>
+                            </select>
+                            <label>Sujet</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="msg" class="materialize-textarea"></textarea>
+                            <label for="msg">Votre message</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12" style="text-align: center;">
+                            <button class="btn waves-effect waves-light light-blue lighten-1" type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col s6" id="right-contact">
+                    <div class="row">
+                        <iframe width="600" height="600" frameborder="0" style="border:1px solid black;margin-left: 2%;" src="https://www.google.com/maps/embed/v1/place?q=Lyon&key=AIzaSyBqthHxh4ocAQYKNUjG6NaE2lD_7VBCQ2c" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
+{% endblock %}
+{% block scripts %}{{ parent() }}
 {% endblock %}

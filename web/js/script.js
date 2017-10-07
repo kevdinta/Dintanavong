@@ -4,7 +4,7 @@
 
 /* Check if content loaded */
 $(window).on('load',function() {
-    $("#loader").fadeOut(7000);
+    $("#loader").fadeOut(6000);
     $('.pages').show(4000);
     $('#footer').fadeIn();
 });
@@ -16,20 +16,26 @@ $(document).ready(function() {
      $(".se_connecter").sideNav();
      $('.parallax').parallax();
      $('.materialboxed').materialbox();
-     $("#card").flip({
-         axis: 'y',
-         trigger: 'hover'
-     });
-     $("#card1").flip({
-         axis: 'y',
-         trigger: 'hover'
-     });
-     $("#card2").flip({
-         axis: 'y',
-         trigger: 'hover'
-     });
-     $("#card3").flip({
-         axis: 'y',
-         trigger: 'hover'
-     });
+     $('select').material_select();
+    if($(".card").length > 0) {
+        $("#card").flip({
+            axis: 'y',
+            trigger: 'hover'
+        });
+        $("#card1").flip({
+            axis: 'y',
+            trigger: 'hover'
+        });
+        $("#card2").flip({
+            axis: 'y',
+            trigger: 'hover'
+        });
+        $("#card3").flip({
+            axis: 'y',
+            trigger: 'hover'
+        });
+    }
+    if($("#right-contact").length > 0) {
+        $("#right-contact").delay(2000).show(5000);
+    }
 });

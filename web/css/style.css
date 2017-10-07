@@ -22,7 +22,7 @@
 }
 
 #footer {
-   display: none;
+    display: none;
     margin-top: 20%;
 }
 
@@ -34,10 +34,17 @@
 .pages {
    display: none;
 }
-
 body {
     background-color: #fcfcfc;
 }
 .front .card-content {
     border: 1px solid #dadada !important;
+}
+#form {
+    margin-top: 5%;
+    border: 6px double #dadada;
+    padding: 2%;
+}
+#right-contact {
+    display: none;
 }
