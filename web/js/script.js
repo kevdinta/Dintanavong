@@ -35,7 +35,4 @@ $(document).ready(function() {
             trigger: 'hover'
         });
     }
-    if($("#right-contact").length > 0) {
-        $("#right-contact").delay(2000).show(5000);
-    }
 });
