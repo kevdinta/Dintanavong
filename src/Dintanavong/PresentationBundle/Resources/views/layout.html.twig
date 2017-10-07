@@ -29,13 +29,13 @@
                     <!-- Insert logo -->
                     <!-- <a href="#" class="brand-logo">Logo</a> -->
                     <ul id="nav-mobile">
-                        <li><a href="#">Accueil</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'dintanavong_presentation_homepage' %}active{% endif %}"><a href="{{ path('dintanavong_presentation_homepage') }}">Accueil</a></li>
                         <li><a href="#">A propos de moi</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Projets</a></li>
                         <li><a href="#">Partenaires</a></li>
                         <li><a href="#">Tarifs</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'contact_page' %}active{% endif %}"><a href="{{ path('contact_page') }}">Contact</a></li>
                         <li class="right" id="se_connecter"><a href="#" data-activates="slide-out" class="se_connecter"><i class="material-icons">menu</i></a></li>
                     </ul>
                 </div>
@@ -83,7 +83,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            © 2014 Copyright Text
+            © 2017 Copyright Text
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
         </div>
     </div>
