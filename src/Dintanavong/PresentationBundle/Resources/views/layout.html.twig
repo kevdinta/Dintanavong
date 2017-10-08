@@ -30,11 +30,10 @@
                     <!-- <a href="#" class="brand-logo">Logo</a> -->
                     <ul id="nav-mobile">
                         <li class="{% if app.request.attributes.get('_route') == 'dintanavong_presentation_homepage' %}active{% endif %}"><a href="{{ path('dintanavong_presentation_homepage') }}">Accueil</a></li>
-                        <li><a href="#">A propos de moi</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projets</a></li>
-                        <li><a href="#">Partenaires</a></li>
-                        <li><a href="#">Tarifs</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'about_us' %}active{% endif %}"><a href="{{ path('about_us') }}">A propos de nous</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'projects' %}active{% endif %}"><a href="{{ path('projects') }}">Projets</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'partnership' %}active{% endif %}"><a href="{{ path('partnership') }}">Partenariat</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'prices' %}active{% endif %}"><a href="{{ path('prices') }}">Tarifs</a></li>
                         <li class="{% if app.request.attributes.get('_route') == 'contact_page' %}active{% endif %}"><a href="{{ path('contact_page') }}">Contact</a></li>
                         <li class="right" id="se_connecter"><a href="#" data-activates="slide-out" class="se_connecter"><i class="material-icons">menu</i></a></li>
                     </ul>

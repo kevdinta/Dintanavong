@@ -4,3 +4,15 @@ dintanavong_presentation_homepage:
 contact_page:
     path:    /contact
     defaults: { _controller: DintanavongPresentationBundle:Contact:index }
+about_us:
+    path:    /aproposdenous
+    defaults: { _controller: DintanavongPresentationBundle:Aboutus:index }
+partnership:
+    path:    /partenariat
+    defaults: { _controller: DintanavongPresentationBundle:Partnership:index }
+prices:
+    path:    /tarifs
+    defaults: { _controller: DintanavongPresentationBundle:Prices:index }
+projects:
+    path:    /projets
+    defaults: { _controller: DintanavongPresentationBundle:Projects:index }
