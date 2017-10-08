@@ -23,9 +23,7 @@
 
 #footer {
     display: none;
-    margin-top: 20%;
 }
-
 /* Fade */
 /*.p_home {*/
     /*opacity:0;*/
@@ -44,4 +42,9 @@ body {
     margin-top: 5%;
     border: 6px double #dadada;
     padding: 2%;
+}
+#button_parallax {
+    position: absolute;
+    top: 50%;
+    left: 30%;
 }
