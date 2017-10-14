@@ -4,9 +4,9 @@
 
 /* Check if content loaded */
 $(window).on('load',function() {
-    $("#loader").fadeOut(6000);
-    $('.pages').fadeIn();
-    $('#footer').fadeIn();
+    $("#loader").fadeOut();
+    $('.pages').fadeIn(4000);
+    $('#footer').fadeIn(4000);
     if ($('#submit').length) {
         $('#submit').on('click', function () {
             $('form').submit( function(event) {
@@ -28,6 +28,10 @@ $(document).ready(function() {
      $('.parallax').parallax();
      $('.materialboxed').materialbox();
      $('select').material_select();
+     $('.slider').slider({
+         indicators:true,
+         height: 550
+     });
     if($(".card").length > 0) {
         $("#card").flip({
             axis: 'y',

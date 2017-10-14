@@ -11,12 +11,31 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
     {{ parent() }}
-
     <div class="pages">
-        <div class="row">
-            <div class="parallax-container">
-                <div class="parallax"><img title="header" alt="header" id="header" src="http://braindamaged.fr/wp-content/uploads/2014/05/Child-of-light-fiat-lux-une.jpg"></div>
-            </div>
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="http://www.turizem-slovenjgradec.si/images/headers/lovrenska.png">
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://i0.wp.com/dailygreenspiration.com/wp-content/uploads/2017/07/header-2.jpg?fit=3489%2C1963&ssl=1&resize=1920%2C550">
+                    <div class="caption left-align">
+                        <h3>Left Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://www.dalgardnobuilders.com/wp-content/uploads/2013/10/slider-final-mountains2.jpg">
+                    <div class="caption right-align">
+                        <h3>Right Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+            </ul>
         </div>
         <div class="container">
             <div class="row">
@@ -201,20 +220,20 @@
             <div class="parallax-container">
                 <div class="parallax">
                     <img title="" alt="" src="https://i.ytimg.com/vi/fJkgx5jQiQ8/maxresdefault.jpg">
-                    <a class="waves-effect waves-light btn-large light-blue darken-4" id="button_parallax"><i class="material-icons left">cloud</i>Télécharger</a>
+                    <a class="waves-effect waves-light btn-large teal" id="button_parallax"><i class="material-icons left">cloud</i>Télécharger</a>
                 </div>
             </div>
         </div>
         <!-- Element Showed -->
-        <a id="menu" class="light-blue lighten-1 waves-effect waves-light btn btn-floating" onclick="$('.tap-target').tapTarget('open')" ><i class="material-icons">menu</i></a>
+        <a id="menu" class="teal waves-effect waves-light btn btn-floating" onclick="$('.tap-target').tapTarget('open')" ><i class="material-icons">menu</i></a>
         <!-- Tap Target Structure -->
-        <div class="tap-target-wrapper"><div class="tap-target light-blue darken-4" data-activates="menu">
+        <div class="tap-target-wrapper"><div class="tap-target teal" data-activates="menu">
                 <div class="tap-target-content white-text">
                     <h5>De nouvelles fonctionnalités</h5>
                     <p class="white-text">Ce site est en cours de développement, de nouvelles fonctionnalités apparaitront prochainement !</p>
                 </div>
             </div>
-            <div class="tap-target-wave" ><a class="btn btn-floating btn-large light-blue darken-4 tap-target-origin"><i class="material-icons">menu</i></a></div></div>
+            <div class="tap-target-wave" ><a class="btn btn-floating btn-large teal darken-4 tap-target-origin"><i class="material-icons">menu</i></a></div></div>
     </div>
 {% endblock %}
 {% block footer %}{{ parent() }}{% endblock %}
