@@ -24,13 +24,8 @@
 #footer {
     display: none;
 }
-/* Fade */
-/*.p_home {*/
-    /*opacity:0;*/
-/*}*/
-
 .pages {
-   display: none;
+    display: none;
 }
 body {
     background-color: #fcfcfc;

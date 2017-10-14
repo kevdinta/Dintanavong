@@ -22,9 +22,9 @@
         </div>
     </div>
     <div class="row" style="margin: 0 !important;">
-        <div class="col s12 navbar-fixed">
+        <div class="navbar-fixed">
             <!-- Menu -->
-            <nav id="menu_portfolio" class="light-blue lighten-1">
+            <nav id="menu_portfolio" class="light-blue darken-4">
                 <div class="nav-wrapper">
                     <!-- Insert logo -->
                     <!-- <a href="#" class="brand-logo">Logo</a> -->
@@ -42,7 +42,7 @@
         </div>
     </div>
     <!-- Sidebar -->
-    <div class="row">
+    <div class="row" style="margin-bottom: 0 !important;">
         <div class="col s12">
             <ul id="slide-out" class="side-nav">
                 <li><div class="user-view">
@@ -62,7 +62,7 @@
     </div>
 {% endblock %}
 {% block footer %}
-    <footer class="page-footer light-blue lighten-1" id="footer">
+    <footer class="page-footer light-blue darken-4" id="footer">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
@@ -89,9 +89,13 @@
 </footer>
 {% endblock %}
 {% block scripts %}
-<script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
-<script src="{{ asset('materialize/js/materialize.min.js') }}"></script>
-<script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('materialize/js/materialize.min.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.2/sweetalert2.all.min.js"></script>
+    <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 {% endblock %}
 </body>
 </html>

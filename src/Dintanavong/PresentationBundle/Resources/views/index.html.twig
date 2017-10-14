@@ -2,15 +2,20 @@
 
 {% block title %}{{ parent() }} - Index{% endblock %}
 {% block body %}
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1228278677291503";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     {{ parent() }}
 
     <div class="pages">
-
         <div class="row">
-            <div class="col s12">
-                <div class="parallax-container">
-                    <div class="parallax"><img title="header" alt="header" src="http://braindamaged.fr/wp-content/uploads/2014/05/Child-of-light-fiat-lux-une.jpg"></div>
-                </div>
+            <div class="parallax-container">
+                <div class="parallax"><img title="header" alt="header" id="header" src="http://braindamaged.fr/wp-content/uploads/2014/05/Child-of-light-fiat-lux-une.jpg"></div>
             </div>
         </div>
         <div class="container">
@@ -24,25 +29,32 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col s6">
-                    <p class="grey-text text-darken-3 lighten-3 p_home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada placerat faucibus. Nam vitae feugiat dui. Aliquam volutpat rhoncus sem nec efficitur. Curabitur eu convallis urna. Fusce ut arcu pretium, fringilla libero non, eleifend urna. Suspendisse hendrerit mattis blandit. Proin vitae leo pharetra velit interdum volutpat sed ut tortor. Vivamus porttitor condimentum metus, nec imperdiet nisl dictum eu. Aliquam quis justo ornare, lacinia ante in, congue tellus. Suspendisse potenti. Donec gravida felis in ex mollis rhoncus. In maximus varius aliquam. Etiam scelerisque lobortis pellentesque. Pellentesque finibus nunc ac ipsum dictum, non pellentesque nulla aliquam. Integer mollis nulla risus, in malesuada nisi pulvinar vel.
-                    </p>
+                <div class="col s4">
                     <p class="grey-text text-darken-3 lighten-3 p_home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada placerat faucibus. Nam vitae feugiat dui. Aliquam volutpat rhoncus sem nec efficitur. Curabitur eu convallis urna. Fusce ut arcu pretium, fringilla libero non, eleifend urna. Suspendisse hendrerit mattis blandit. Proin vitae leo pharetra velit interdum volutpat sed ut tortor. Vivamus porttitor condimentum metus, nec imperdiet nisl dictum eu. Aliquam quis justo ornare, lacinia ante in, congue tellus. Suspendisse potenti. Donec gravida felis in ex mollis rhoncus. In maximus varius aliquam. Etiam scelerisque lobortis pellentesque. Pellentesque finibus nunc ac ipsum dictum, non pellentesque nulla aliquam. Integer mollis nulla risus, in malesuada nisi pulvinar vel.
                     </p>
                 </div>
-                <div class="col s6">
-                    <img src="https://t00.deviantart.net/40NI6RLS51VUEd8WQ2BZ6Lwsnmk=/fit-in/700x350/filters:fixed_height(100,100):origin()/pre00/e2fb/th/pre/f/2017/193/b/e/angelus_mortis_by_carlos_quevedo-dbg1yr8.jpg" title="" alt=""/>
-                    <a class="waves-effect waves-light btn-large light-blue lighten-1"><i class="material-icons left">cloud</i>Télécharger</a>
-                    <a class="waves-effect waves-light btn-large light-blue lighten-1"><i class="material-icons left">perm_contact_calendar</i>Support us !</a>
-                    <a class="waves-effect waves-light btn-large light-blue lighten-1"><i class="material-icons left">add_circle_outline</i>En savoir +</a>
+                <div class="col s4">
+                    <div class="fb-page"
+                         data-href="https://www.facebook.com/facebook"
+                         data-width="372"
+                         data-hide-cover="false"
+                         data-show-facepile="true">
+                    </div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="MY7W4Y4DTK9DG">
+                        <input type="image" src="http://www.pngall.com/wp-content/uploads/2016/05/PayPal-Donate-Button-PNG-HD.png" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+                <div class="col s4">
+                    <a href="https://discord.gg/N4fjJc"><img src="https://lh3.googleusercontent.com/_4zBNFjA8S9yjNB_ONwqBvxTvyXYdC7Nh1jYZ2x6YEcldBr2fyijdjM2J5EoVdTpnkA=w300" alt="wolpertinger_discord" title="wolpertinger_discord"/></a>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col s12">
-                <div class="parallax-container">
-                    <div class="parallax"><img title="professional" alt="professional" src="https://pre00.deviantart.net/adb3/th/pre/f/2017/088/e/6/26s_by_wlop-db3wpj2.jpg"></div>
-                </div>
+            <div class="parallax-container">
+                <div class="parallax"><img title="professional" alt="professional" src="https://pre00.deviantart.net/adb3/th/pre/f/2017/088/e/6/26s_by_wlop-db3wpj2.jpg"></div>
             </div>
         </div>
         <div class="row container">
@@ -157,10 +169,8 @@
             </div>
         </div>
         <div class="row" style="margin-top: 15%;">
-            <div class="col s12">
-                <div class="parallax-container">
-                    <div class="parallax"><img title="" alt="" src="https://images4.alphacoders.com/117/117378.jpg"></div>
-                </div>
+            <div class="parallax-container">
+                <div class="parallax"><img title="" alt="" src="https://images4.alphacoders.com/117/117378.jpg"></div>
             </div>
         </div>
         <div class="row container">
@@ -187,27 +197,24 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col s12">
-                <div class="parallax-container">
-                    <div class="parallax">
-                        <img title="" alt="" src="https://i.ytimg.com/vi/fJkgx5jQiQ8/maxresdefault.jpg">
-                        <a class="waves-effect waves-light btn-large light-blue lighten-1" id="button_parallax"><i class="material-icons left">cloud</i>Télécharger</a>
-                    </div>
+        <div class="row" style="margin-bottom: 0 !important;">
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img title="" alt="" src="https://i.ytimg.com/vi/fJkgx5jQiQ8/maxresdefault.jpg">
+                    <a class="waves-effect waves-light btn-large light-blue darken-4" id="button_parallax"><i class="material-icons left">cloud</i>Télécharger</a>
                 </div>
             </div>
         </div>
         <!-- Element Showed -->
         <a id="menu" class="light-blue lighten-1 waves-effect waves-light btn btn-floating" onclick="$('.tap-target').tapTarget('open')" ><i class="material-icons">menu</i></a>
-
         <!-- Tap Target Structure -->
-        <div class="tap-target-wrapper"><div class="tap-target light-blue lighten-1" data-activates="menu">
+        <div class="tap-target-wrapper"><div class="tap-target light-blue darken-4" data-activates="menu">
                 <div class="tap-target-content white-text">
                     <h5>De nouvelles fonctionnalités</h5>
                     <p class="white-text">Ce site est en cours de développement, de nouvelles fonctionnalités apparaitront prochainement !</p>
                 </div>
             </div>
-            <div class="tap-target-wave" ><a class="btn btn-floating btn-large light-blue lighten-1 tap-target-origin"><i class="material-icons">menu</i></a></div></div>
+            <div class="tap-target-wave" ><a class="btn btn-floating btn-large light-blue darken-4 tap-target-origin"><i class="material-icons">menu</i></a></div></div>
     </div>
 {% endblock %}
 {% block footer %}{{ parent() }}{% endblock %}

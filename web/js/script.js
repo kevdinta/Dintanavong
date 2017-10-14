@@ -5,9 +5,20 @@
 /* Check if content loaded */
 $(window).on('load',function() {
     $("#loader").fadeOut(6000);
-    $('.pages').show(4000);
+    $('.pages').fadeIn();
     $('#footer').fadeIn();
+    if ($('#submit').length) {
+        $('#submit').on('click', function () {
+            $('form').submit( function(event) {
+                var formId = this.id,
+                    form = this;
+                success_submit();
+                event.preventDefault();
+            });
+        });
+    }
 });
+
 
 $(document).ready(function() {
      // Display carousel
@@ -36,3 +47,12 @@ $(document).ready(function() {
         });
     }
 });
+
+function success_submit() {
+    swal({
+        title: 'Message envoyé !',
+        text: "Wolpertinger s'assure de vous répondre dans les plus brefs délais",
+        type: 'success',
+        timer: 5000
+    })
+}
