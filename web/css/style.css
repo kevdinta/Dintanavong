@@ -1,23 +1,36 @@
+/* Icone sidebar */
 #se_connecter {
     padding-right: 1%;
 }
-.materialboxed {
-    width: 100% !important;
-}
+/* Icone bottom gauche */
 #menu {
     position:fixed;
-    right:0px;
-    bottom:0px;
+    bottom:10px;
+    left: 10px;
 }
-
+#back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #009688;
+    padding: 10px;
+    color:#FAFAFA;
+    opacity: 0;
+    cursor: pointer;
+    /* Effet pour faire pop le btn */
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
+}
+#back-to-top.show {
+    opacity: 1;
+}
 .parallax-container {
     height: 600px;
 }
-
+/* Positionnement de l'icone de chargement au milieu de la page */
 #loader {
     position: absolute; left: 50%; top: 50%;
 }
-
 #footer {
     display: none;
 }
@@ -30,20 +43,24 @@ body {
 .front .card-content {
     border: 1px solid #dadada !important;
 }
+/* Contact form */
 #form {
     margin-top: 5%;
     border: 6px double #dadada;
     padding: 2%;
 }
+/* Btn à l'intérieur du parallax */
 #button_parallax {
     position: absolute;
     top: 50%;
     left: 30%;
 }
+/* Inclusion des indicators à l'intérieur du slider */
 .indicators {
     bottom:60px !important;
     z-index: 100 !important;
 }
+/* Changement de couleur de l'indicator quand on clique */
 .slider .indicators .indicator-item.active {
     background-color: #00897b;
 }

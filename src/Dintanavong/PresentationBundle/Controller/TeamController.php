@@ -11,11 +11,11 @@ namespace Dintanavong\PresentationBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
-class AboutusController extends Controller
+class TeamController extends Controller
 {
     public function indexAction()
     {
-        $contact = $this->get('templating')->render('DintanavongPresentationBundle::aboutus.html.twig');
+        $contact = $this->get('templating')->render('DintanavongPresentationBundle::team.html.twig');
         return new Response($contact);
     }
 }

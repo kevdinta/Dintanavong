@@ -4,11 +4,15 @@
 
 /* Check if content loaded */
 $(window).on('load',function() {
+    /* Fait disparaitre le chargement */
     $("#loader").fadeOut();
+    /* Affiche le contenu des pages web avec un effet fade */
     $('.pages').fadeIn(4000);
     $('#footer').fadeIn(4000);
+    /* Check s'il y a un input avec l'id submit */
     if ($('#submit').length) {
         $('#submit').on('click', function () {
+            /* Retarde le submit... à travailler... */
             $('form').submit( function(event) {
                 var formId = this.id,
                     form = this;
@@ -17,8 +21,30 @@ $(window).on('load',function() {
             });
         });
     }
+    /* back to top */
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 100,
+            backToTop = function () {
+                var scrollTop = $(window).scrollTop();
+                console.log(scrollTop);
+                if (scrollTop > scrollTrigger) {
+                    $('#back-to-top').addClass('show');
+                } else {
+                    $('#back-to-top').removeClass('show');
+                }
+            };
+        backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+        });
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 700);
+        });
+    }
 });
-
 
 $(document).ready(function() {
      // Display carousel
@@ -26,7 +52,6 @@ $(document).ready(function() {
     // // Initialize collapse button
      $(".se_connecter").sideNav();
      $('.parallax').parallax();
-     $('.materialboxed').materialbox();
      $('select').material_select();
      $('.slider').slider({
          indicators:true,
@@ -50,9 +75,20 @@ $(document).ready(function() {
             trigger: 'hover'
         });
     }
+
+
+    $('.dropdown-button').dropdown({
+            inDuration: 300,
+            outDuration: 225,
+            hover: true,
+            belowOrigin: true, // Displays dropdown below the button
+        }
+    );
+
 });
 
 function success_submit() {
+    // Utilisation de sweet alert
     swal({
         title: 'Message envoyé !',
         text: "Wolpertinger s'assure de vous répondre dans les plus brefs délais",

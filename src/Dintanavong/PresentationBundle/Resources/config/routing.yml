@@ -4,9 +4,9 @@ dintanavong_presentation_homepage:
 contact_page:
     path:    /contact
     defaults: { _controller: DintanavongPresentationBundle:Contact:index }
-about_us:
-    path:    /aproposdenous
-    defaults: { _controller: DintanavongPresentationBundle:Aboutus:index }
+team:
+    path:    /team
+    defaults: { _controller: DintanavongPresentationBundle:Team:index }
 partnership:
     path:    /partenariat
     defaults: { _controller: DintanavongPresentationBundle:Partnership:index }
