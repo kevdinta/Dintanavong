@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47116b22-8c0f-4c8f-a66e-be3097dae9ca" name="Default" comment="header slider">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Controller/AboutusController.php" afterPath="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Controller/TeamController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/aboutus.html.twig" afterPath="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/team.html.twig" />
+    <list default="true" id="47116b22-8c0f-4c8f-a66e-be3097dae9ca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/contact.html.twig" afterPath="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/contact.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/index.html.twig" afterPath="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/team.html.twig" afterPath="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/team.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/script.js" afterPath="$PROJECT_DIR$/web/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +21,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="83" column="68" lean-forward="false" selection-start-line="83" selection-start-column="68" selection-end-line="83" selection-end-column="68" />
+            <state relative-caret-position="901">
+              <caret line="70" column="6" lean-forward="false" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -35,14 +31,29 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1462">
-              <caret line="40" column="29" lean-forward="false" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+            <state relative-caret-position="453">
+              <caret line="181" column="24" lean-forward="false" selection-start-line="181" selection-start-column="24" selection-end-line="181" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="team.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/team.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="685">
+              <caret line="440" column="52" lean-forward="false" selection-start-line="440" selection-start-column="52" selection-end-line="440" selection-end-column="52" />
+              <folding>
+                <element signature="e#390#416#0#HTML" expanded="true" />
+                <element signature="e#5822#5849#0#HTML" expanded="true" />
+                <element signature="e#11136#11160#0#HTML" expanded="true" />
+                <element signature="e#16763#16787#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="767">
@@ -55,8 +66,8 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+            <state relative-caret-position="68">
+              <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -135,13 +146,14 @@
         <option value="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/prices.html.twig" />
         <option value="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/projects.html.twig" />
         <option value="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/contact.html.twig" />
-        <option value="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Controller/TeamController.php" />
         <option value="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Controller/AboutusController.php" />
         <option value="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/web/js/script.js" />
-        <option value="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/web/js/script.js" />
+        <option value="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/team.html.twig" />
       </list>
     </option>
   </component>
@@ -174,6 +186,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -440,8 +454,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -561,7 +573,9 @@
       <workItem from="1507460788976" duration="3734000" />
       <workItem from="1507659537912" duration="1063000" />
       <workItem from="1507975111005" duration="13048000" />
-      <workItem from="1507995390193" duration="3923000" />
+      <workItem from="1507995390193" duration="5750000" />
+      <workItem from="1508015985073" duration="1912000" />
+      <workItem from="1508081747950" duration="5489000" />
     </task>
     <task id="LOCAL-00001" summary="Navbar 1ere approche">
       <created>1506780232119</created>
@@ -682,21 +696,27 @@
       <option name="project" value="LOCAL" />
       <updated>1507990380163</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="dropdown + backtotop + adjust icon">
+      <created>1507999342510</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1507999342510</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87954000" />
+    <option name="totallyTimeSpent" value="97182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2803838" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2867804" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -708,6 +728,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -735,7 +756,8 @@
     <MESSAGE value="img" />
     <MESSAGE value="design adjust" />
     <MESSAGE value="header slider" />
-    <option name="LAST_COMMIT_MESSAGE" value="header slider" />
+    <MESSAGE value="dropdown + backtotop + adjust icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="dropdown + backtotop + adjust icon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -939,7 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,19 +1050,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/team.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="63" lean-forward="false" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="75" lean-forward="true" selection-start-line="1" selection-start-column="75" selection-end-line="1" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,7 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="597">
           <caret line="53" column="76" lean-forward="false" selection-start-line="53" selection-start-column="76" selection-end-line="53" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,26 +1080,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="83" column="68" lean-forward="false" selection-start-line="83" selection-start-column="68" selection-end-line="83" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1462">
-          <caret line="40" column="29" lean-forward="false" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        <state relative-caret-position="68">
+          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1098,6 +1093,35 @@
         <state relative-caret-position="767">
           <caret line="65" column="1" lean-forward="false" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="181" column="24" lean-forward="false" selection-start-line="181" selection-start-column="24" selection-end-line="181" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="70" column="6" lean-forward="false" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dintanavong/PresentationBundle/Resources/views/team.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="440" column="52" lean-forward="false" selection-start-line="440" selection-start-column="52" selection-end-line="440" selection-end-column="52" />
+          <folding>
+            <element signature="e#390#416#0#HTML" expanded="true" />
+            <element signature="e#5822#5849#0#HTML" expanded="true" />
+            <element signature="e#11136#11160#0#HTML" expanded="true" />
+            <element signature="e#16763#16787#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

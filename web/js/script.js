@@ -26,7 +26,6 @@ $(window).on('load',function() {
         var scrollTrigger = 100,
             backToTop = function () {
                 var scrollTop = $(window).scrollTop();
-                console.log(scrollTop);
                 if (scrollTop > scrollTrigger) {
                     $('#back-to-top').addClass('show');
                 } else {
@@ -58,25 +57,11 @@ $(document).ready(function() {
          height: 550
      });
     if($(".card").length > 0) {
-        $("#card").flip({
-            axis: 'y',
-            trigger: 'hover'
-        });
-        $("#card1").flip({
-            axis: 'y',
-            trigger: 'hover'
-        });
-        $("#card2").flip({
-            axis: 'y',
-            trigger: 'hover'
-        });
-        $("#card3").flip({
+        $(".cards").flip({
             axis: 'y',
             trigger: 'hover'
         });
     }
-
-
     $('.dropdown-button').dropdown({
             inDuration: 300,
             outDuration: 225,
@@ -84,7 +69,6 @@ $(document).ready(function() {
             belowOrigin: true, // Displays dropdown below the button
         }
     );
-
 });
 
 function success_submit() {
