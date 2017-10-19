@@ -16,3 +16,6 @@ prices:
 projects:
     path:    /projets
     defaults: { _controller: DintanavongPresentationBundle:Projects:index }
+deepsense:
+    path:    /projets/deepsense
+    defaults: { _controller: DintanavongPresentationBundle:Static:index }

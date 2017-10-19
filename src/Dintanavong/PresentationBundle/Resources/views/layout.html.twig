@@ -3,10 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %}Wolpertinger{% endblock %}</title>
+    {% block css %}
     <link rel="stylesheet" type="text/css" href="{{ asset('materialize/css/materialize.min.css') }}"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/animate.css') }}"/>
+    {% endblock %}
 </head>
 <body>
 {% block body %}
@@ -29,6 +31,11 @@
                 <li class="divider"></li>
                 <li><a href="#!">On vous teste ?</a></li>
             </ul>
+            <ul id="dropdown_deepsense" class="dropdown-content">
+                <li><a href="{{ path('deepsense') }}">Deep Sense</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Chalavon</a></li>
+            </ul>
             <!-- Menu -->
             <nav class="teal">
                 <div class="nav-wrapper">
@@ -37,7 +44,7 @@
                     <ul id="nav-mobile">
                         <li class="{% if app.request.attributes.get('_route') == 'dintanavong_presentation_homepage' %}active{% endif %}"><a href="{{ path('dintanavong_presentation_homepage') }}">Accueil</a></li>
                         <li class="{% if app.request.attributes.get('_route') == 'team' %}active{% endif %}"><a class="dropdown-button" href="#" data-activates="dropdown_about_us">A propos de nous<i class="material-icons right">arrow_drop_down</i></a></li>
-                        <li class="{% if app.request.attributes.get('_route') == 'projects' %}active{% endif %}"><a href="{{ path('projects') }}">Projets</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'projects' %}active{% endif %}"><a class="dropdown-button" data-activates="dropdown_deepsense" href="{{ path('projects') }}">Liste des projets <i class="material-icons right">arrow_drop_down</i></a></li>
                         <li class="{% if app.request.attributes.get('_route') == 'partnership' %}active{% endif %}"><a href="{{ path('partnership') }}">Partenariat</a></li>
                         <li class="{% if app.request.attributes.get('_route') == 'prices' %}active{% endif %}"><a href="{{ path('prices') }}">Tarifs</a></li>
                         <li class="{% if app.request.attributes.get('_route') == 'contact_page' %}active{% endif %}"><a href="{{ path('contact_page') }}">Contact</a></li>
