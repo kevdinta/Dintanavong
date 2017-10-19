@@ -1,20 +1,17 @@
 {% extends "DintanavongPresentationBundle::layout.html.twig" %}
 {% block title %}{{ parent() }} | Deep Sense {% endblock %}
 {% block css %} {{ parent() }}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css"/>
 {% endblock %}
 {% block body %}
     <div id="fullpage">
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
         <div class="section">
-            <div class="slide"> Slide 1 </div>
-            <div class="slide"> Slide 2 </div>
-            <div class="slide"> Slide 3 </div>
-            <div class="slide"> Slide 4 </div>
+
+            <h1 class="tlt">My Title</h1>
         </div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
     </div>
 {% endblock %}
 {% block iconbottom %}{% endblock %}
@@ -22,4 +19,6 @@
 {% block scripts %}{{ parent() }}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+    <script src="{{ asset('textillate/assets/jquery.lettering.js') }}"></script>
+    <script src="{{ asset('textillate/jquery.textillate.js') }}"></script>
 {% endblock %}

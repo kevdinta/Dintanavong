@@ -79,34 +79,22 @@ $(document).ready(function() {
         navigation: true,
         navigationTooltips:['Déni', 'Colère', 'Négociation', 'Dépression', 'Acceptation'],
         showActiveTooltip: true,
-        //Scrolling
-        css3: true,
-        scrollingSpeed: 700,
-        autoScrolling: true,
-        fitToSection: true,
-        fitToSectionDelay: 1000,
-        scrollBar: false,
-        easing: 'easeInOutCubic',
-        easingcss3: 'ease',
-
-        //Accessibility
-        keyboardScrolling: true,
-        animateAnchor: true,
-        recordHistory: true,
-
-        //Design
-        controlArrows: true,
-        verticalCentered: true,
-        sectionsColor : ['#ccc', '#fff'],
-        paddingTop: '3em',
-        paddingBottom: '10px',
-        fixedElements: '#header, .footer',
-        responsiveWidth: 0,
-        responsiveHeight: 0,
-        responsiveSlides: false,
-        parallax: false,
-        parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+        keyboardScrolling: true
     });
+    var bg = {
+        0: "https://www.ihdimages.com/wp-content/uploadsktz/2014/11/fantasy_forest_landscape_cool_wallpapers.jpg",
+        1: "https://i.imgur.com/RIhHH2f.jpg",
+        2: "http://bhstorm.com/i/2016/10/anime-fantasy-landscape-wallpapers-background.jpg",
+        3: "http://www.cgartt.com/images/works/201403/1394804487.jpg",
+        4: "http://s1.1zoom.me/big3/454/Dark_Souls_Warriors_Fire_3_Lorian_Lothric_Armor_520082_2560x1440.jpg"
+    };
+    $(".section").each(function(i){
+        $(this).css("background", "url("+bg[i]+")");
+    });
+
+    $(function () {
+        $('.tlt').textillate();
+    })
 
 });
 

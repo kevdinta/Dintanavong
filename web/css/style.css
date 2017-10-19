@@ -64,3 +64,7 @@ body {
 .slider .indicators .indicator-item.active {
     background-color: #00897b;
 }
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: white !important;
+    padding: 25% !important;
+}
