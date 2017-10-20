@@ -66,5 +66,26 @@ body {
 }
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background: white !important;
-    padding: 25% !important;
+    padding: 7px !important;
+}
+#fullpage {
+    color:white;
+    text-align: center;
+    font-family: 'Indie Flower', Arial !important;
+}
+#fp-nav ul li .fp-tooltip {
+    font-family: 'Indie Flower', Arial !important;
+    font-size: 25px !important;
+}
+#loaderDp {
+    position: fixed;
+    content:url('../img/loader.gif');
+    margin-left: auto;
+    margin-right: auto;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#fullpage {
+    display: none;
 }

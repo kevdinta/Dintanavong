@@ -6,6 +6,8 @@
 $(window).on('load',function() {
     /* Fait disparaitre le chargement */
     $("#loader").fadeOut();
+    $("#loaderDp").fadeOut(5000);
+    $("#fullpage").fadeIn(2000);
     /* Affiche le contenu des pages web avec un effet fade */
     $('.pages').fadeIn(4000);
     $('#footer').fadeIn(4000);
@@ -21,6 +23,9 @@ $(window).on('load',function() {
             });
         });
     }
+
+
+
     /* back to top */
     if ($('#back-to-top').length) {
         var scrollTrigger = 100,
