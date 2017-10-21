@@ -23,9 +23,6 @@ $(window).on('load',function() {
             });
         });
     }
-
-
-
     /* back to top */
     if ($('#back-to-top').length) {
         var scrollTrigger = 100,
@@ -61,7 +58,7 @@ $(document).ready(function() {
          indicators:true,
          height: 550
      });
-    if($(".card").length > 0) {
+    if($(".card").length) {
         $(".cards").flip({
             axis: 'y',
             trigger: 'hover'
@@ -74,33 +71,38 @@ $(document).ready(function() {
             belowOrigin: true, // Displays dropdown below the button
         }
     );
+    if($('#fullpage').length) {
+        $('#fullpage').fullpage({
+            //Navigation
+            navigation: true,
+            navigationTooltips:['Accueil', 'Déni', 'Colère', 'Négociation', 'Dépression', 'Acceptation'],
+            showActiveTooltip: true,
+            keyboardScrolling: true
+        });
+        var bg = {
+            0: "https://www.ihdimages.com/wp-content/uploadsktz/2014/11/fantasy_forest_landscape_cool_wallpapers.jpg",
+            1: "https://i.imgur.com/RIhHH2f.jpg",
+            2: "http://bhstorm.com/i/2016/10/anime-fantasy-landscape-wallpapers-background.jpg",
+            3: "http://www.cgartt.com/images/works/201403/1394804487.jpg",
+            4: "https://s-media-cache-ak0.pinimg.com/originals/9d/d7/1c/9dd71cd2cd0ccc63c19f64230090a71e.jpg",
+            5: "https://s-media-cache-ak0.pinimg.com/originals/19/71/ab/1971ab731c0b89bf46bcaf708976fc91.jpg"
+        };
+        $(".section").each(function(i){
+            $(this).css("background", "url("+bg[i]+")");
+        });
 
-    $('#fullpage').fullpage({
+        $(function () {
+            $('.tlt').textillate();
+        })
 
-        //Navigation
-        navigation: true,
-        navigationTooltips:['Accueil', 'Déni', 'Colère', 'Négociation', 'Dépression', 'Acceptation'],
-        showActiveTooltip: true,
-        keyboardScrolling: true
-    });
-    var bg = {
-        0: "https://www.ihdimages.com/wp-content/uploadsktz/2014/11/fantasy_forest_landscape_cool_wallpapers.jpg",
-        1: "https://i.imgur.com/RIhHH2f.jpg",
-        2: "http://bhstorm.com/i/2016/10/anime-fantasy-landscape-wallpapers-background.jpg",
-        3: "http://www.cgartt.com/images/works/201403/1394804487.jpg",
-        4: "https://s-media-cache-ak0.pinimg.com/originals/9d/d7/1c/9dd71cd2cd0ccc63c19f64230090a71e.jpg",
-        5: "https://s-media-cache-ak0.pinimg.com/originals/19/71/ab/1971ab731c0b89bf46bcaf708976fc91.jpg"
-    };
-    $(".section").each(function(i){
-        $(this).css("background", "url("+bg[i]+")");
-    });
-
-    $(function () {
-        $('.tlt').textillate();
-    })
-
+        $('#un-mute').on('click', function () {
+            // Mute - Unmute
+            $.each($('audio'), function (i, val) {
+                $('audio')[i].muted ^= 1;
+            })
+        });
+    }
 });
-
 function success_submit() {
     // Utilisation de sweet alert
     swal({
