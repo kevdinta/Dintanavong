@@ -64,9 +64,9 @@ body {
 .slider .indicators .indicator-item.active {
     background-color: #00897b;
 }
+/* Fullpage */
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background: white !important;
-    padding: 7px !important;
 }
 #fullpage {
     color:white;
@@ -77,6 +77,10 @@ body {
     font-family: 'Indie Flower', Arial !important;
     font-size: 25px !important;
 }
+#fullpage {
+    display: none;
+}
+/* Loader Deep Sense */
 #loaderDp {
     position: fixed;
     content:url('../img/loader.gif');
@@ -86,6 +90,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
-#fullpage {
-    display: none;
+.tlt {
+    font-size: 5em;
 }

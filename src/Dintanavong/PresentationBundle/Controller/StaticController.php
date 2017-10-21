@@ -15,7 +15,19 @@ class StaticController extends Controller
 {
     public function indexAction()
     {
-        $contact = $this->get('templating')->render('DintanavongPresentationBundle::deepsense.html.twig');
+        // Array des @ip locales
+        $whitelist = array(
+            '127.0.0.1',
+            '::1'
+        );
+        $url = "http://localhost/Dintanavong/web/app_dev.php/projets";
+        if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
+            // Si pas local, on met l'@ du site
+            //$url = "http://wolpertinger-rebirth.com";
+        }
+        $contact = $this->get('templating')->render('DintanavongPresentationBundle::deepsense.html.twig', array(
+            'url' => $url,
+        ));
         return new Response($contact);
     }
 }

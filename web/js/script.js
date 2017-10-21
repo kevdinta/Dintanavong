@@ -78,11 +78,8 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
 
         //Navigation
-        menu: '#menu',
-        lockAnchors: false,
-        anchors:['firstPage', 'secondPage'],
         navigation: true,
-        navigationTooltips:['Déni', 'Colère', 'Négociation', 'Dépression', 'Acceptation'],
+        navigationTooltips:['Accueil', 'Déni', 'Colère', 'Négociation', 'Dépression', 'Acceptation'],
         showActiveTooltip: true,
         keyboardScrolling: true
     });
@@ -91,7 +88,8 @@ $(document).ready(function() {
         1: "https://i.imgur.com/RIhHH2f.jpg",
         2: "http://bhstorm.com/i/2016/10/anime-fantasy-landscape-wallpapers-background.jpg",
         3: "http://www.cgartt.com/images/works/201403/1394804487.jpg",
-        4: "http://s1.1zoom.me/big3/454/Dark_Souls_Warriors_Fire_3_Lorian_Lothric_Armor_520082_2560x1440.jpg"
+        4: "https://s-media-cache-ak0.pinimg.com/originals/9d/d7/1c/9dd71cd2cd0ccc63c19f64230090a71e.jpg",
+        5: "https://s-media-cache-ak0.pinimg.com/originals/19/71/ab/1971ab731c0b89bf46bcaf708976fc91.jpg"
     };
     $(".section").each(function(i){
         $(this).css("background", "url("+bg[i]+")");

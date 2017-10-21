@@ -1,19 +1,53 @@
 {% extends "DintanavongPresentationBundle::layout.html.twig" %}
 {% block title %}{{ parent() }} | Deep Sense {% endblock %}
-{% block css %} {{ parent() }}
+{% block css %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/animate.css') }}"/>
 {% endblock %}
 {% block body %}
     <div id="loaderDp"></div>
     <div id="fullpage">
         <div class="section">
             <h1 class="tlt">DEEP SENSE</h1>
+            <a style="color: white;" href="{{ url }}"><h2 class="animated infinite bounce">Projets</h2></a>
+            <audio data-autoplay loop>
+                <source src="{{ asset('music/Theme.mp3') }}" type="audio/mp3">
+                <source src="{{ asset('music/Theme_piano.mp3') }}" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
         </div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
+        <div class="section">
+            <audio data-autoplay>
+                <source src="{{ asset('music/Deni.mp3') }}" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="section">Some section
+            <audio data-autoplay>
+                <source src="{{ asset('music/Comptine_Doly_et_Oniro.mp3') }}" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="section">Some section
+            <audio data-autoplay>
+                <source src="{{ asset('music/Negociation.mp3') }}" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="section">Some section
+            <audio data-autoplay>
+                <source src="{{ asset('music/') }}" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="section">Some section
+            <audio data-autoplay>
+                <source src="{{ asset('music/') }}" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
     </div>
 {% endblock %}
 {% block iconbottom %}{% endblock %}
