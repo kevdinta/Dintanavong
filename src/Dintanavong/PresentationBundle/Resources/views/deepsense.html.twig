@@ -1,5 +1,5 @@
 {% extends "DintanavongPresentationBundle::layout.html.twig" %}
-{% block title %}{{ parent() }} | Deep Sense {% endblock %}
+{% block title %}{{ parent() }} Deep Sense {% endblock %}
 {% block css %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -8,13 +8,13 @@
 {% endblock %}
 {% block body %}
     <div id="loaderDp"></div>
-    <div style="position: fixed; z-index: 1;">
+    <div id="sound_block">
         <input type="checkbox" name="un-mute" id="un-mute">
         <label for="un-mute" class="unmute">
-            <img style="width: 50px; height: 50px; padding: 10px;" src="http://upload.wikimedia.org/wikipedia/commons/3/3f/Mute_Icon.svg" alt="Mute_Icon.svg" title="Mute icon">
+            <img style="cursor:pointer; width: 50px; height: 50px; padding: 10px;" src="http://upload.wikimedia.org/wikipedia/commons/3/3f/Mute_Icon.svg" alt="Mute_Icon.svg" title="Mute icon">
         </label>
         <label for="un-mute" class="mute">
-            <img style="width: 50px; height: 50px; padding: 10px;"  src="http://upload.wikimedia.org/wikipedia/commons/2/21/Speaker_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon">
+            <img style="cursor:pointer; width: 50px; height: 50px; padding: 10px;"  src="http://upload.wikimedia.org/wikipedia/commons/2/21/Speaker_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon">
         </label>
     </div>
 
@@ -22,11 +22,19 @@
         <div class="section">
             <h1 class="tlt">DEEP SENSE</h1>
             <a style="color: white;" href="{{ url }}"><h2 class="animated infinite bounce">Projets</h2></a>
+
             <audio data-autoplay loop>
                 <source src="{{ asset('music/Theme.mp3') }}" type="audio/mp3">
                 <source src="{{ asset('music/Theme_piano.mp3') }}" type="audio/mp3">
                 Your browser does not support the audio element.
             </audio>
+            <!-- Video de présentation à foutre prochainement -->
+            <!--
+            <video data-autoplay loop>
+                <source data-src="{{ asset('video/hd1562.mp4') }}" type="video/mp4" />
+                Your browser does not support the video element.
+            </video>
+            -->
         </div>
         <div class="section">
             <audio data-autoplay>

@@ -8,6 +8,7 @@ $(window).on('load',function() {
     $("#loader").fadeOut();
     $("#loaderDp").fadeOut(5000);
     $("#fullpage").fadeIn(2000);
+    $("#sound_block").fadeIn(2000);
     /* Affiche le contenu des pages web avec un effet fade */
     $('.pages').fadeIn(4000);
     $('#footer').fadeIn(4000);
@@ -24,21 +25,22 @@ $(window).on('load',function() {
         });
     }
     /* back to top */
-    if ($('#back-to-top').length) {
+    if ($('.back-to-top').length) {
         var scrollTrigger = 100,
             backToTop = function () {
                 var scrollTop = $(window).scrollTop();
+                console.log(scrollTop);
                 if (scrollTop > scrollTrigger) {
-                    $('#back-to-top').addClass('show');
+                    $('.back-to-top').addClass('show');
                 } else {
-                    $('#back-to-top').removeClass('show');
+                    $('.back-to-top').removeClass('show');
                 }
             };
         backToTop();
         $(window).on('scroll', function () {
             backToTop();
         });
-        $('#back-to-top').on('click', function (e) {
+        $('.back-to-top').on('click', function (e) {
             e.preventDefault();
             $('html,body').animate({
                 scrollTop: 0
@@ -80,12 +82,12 @@ $(document).ready(function() {
             keyboardScrolling: true
         });
         var bg = {
-            0: "https://www.ihdimages.com/wp-content/uploadsktz/2014/11/fantasy_forest_landscape_cool_wallpapers.jpg",
-            1: "https://i.imgur.com/RIhHH2f.jpg",
-            2: "http://bhstorm.com/i/2016/10/anime-fantasy-landscape-wallpapers-background.jpg",
+            0: "https://i.imgur.com/q9n6rYX.jpg",
+            1: "http://www.52dazhew.com/data/out/64/585922552-dark-fantasy-wallpapers.jpg",
+            2: "https://i.imgur.com/5vhA8dj.jpg",
             3: "http://www.cgartt.com/images/works/201403/1394804487.jpg",
             4: "https://s-media-cache-ak0.pinimg.com/originals/9d/d7/1c/9dd71cd2cd0ccc63c19f64230090a71e.jpg",
-            5: "https://s-media-cache-ak0.pinimg.com/originals/19/71/ab/1971ab731c0b89bf46bcaf708976fc91.jpg"
+            5: "http://goldwallpapers.com/uploads/posts/fantasy-world-background/fantasy_world_background_015.jpg"
         };
         $(".section").each(function(i){
             $(this).css("background", "url("+bg[i]+")");

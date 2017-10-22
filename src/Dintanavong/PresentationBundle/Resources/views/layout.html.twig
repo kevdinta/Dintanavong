@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>{% block title %}Wolpertinger{% endblock %}</title>
+    <title>{% block title %}Wolpertinger |{% endblock %}</title>
     {% block css %}
     <link rel="stylesheet" type="text/css" href="{{ asset('materialize/css/materialize.min.css') }}"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
@@ -85,7 +85,7 @@
             </div>
         </div>
         <div class="tap-target-wave" ><a class="btn btn-floating btn-large teal darken-4 tap-target-origin"><i class="material-icons">menu</i></a></div></div>
-    <a href="#" id="back-to-top" title="Back to top"><i class="material-icons">arrow_drop_up</i></a>
+    <a href="#" class="back-to-top" id="back-to-top" title="Back to top"><i class="material-icons">arrow_drop_up</i></a>
 {% endblock %}
 {% block footer %}
     <footer class="page-footer teal darken-1" id="footer">
