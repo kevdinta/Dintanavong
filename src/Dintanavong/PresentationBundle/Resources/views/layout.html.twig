@@ -45,6 +45,7 @@
                         <li class="{% if app.request.attributes.get('_route') == 'dintanavong_presentation_homepage' %}active{% endif %}"><a href="{{ path('dintanavong_presentation_homepage') }}">Accueil</a></li>
                         <li class="{% if app.request.attributes.get('_route') == 'team' %}active{% endif %}"><a class="dropdown-button" href="#" data-activates="dropdown_about_us">A propos de nous<i class="material-icons right">arrow_drop_down</i></a></li>
                         <li class="{% if app.request.attributes.get('_route') == 'projects' %}active{% endif %}"><a class="dropdown-button" data-activates="dropdown_deepsense" href="{{ path('projects') }}">Liste des projets <i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'gallery' %}active{% endif %}"><a href="{{ path('gallery') }}">Galerie</a></li>
                         <li class="{% if app.request.attributes.get('_route') == 'partnership' %}active{% endif %}"><a href="{{ path('partnership') }}">Partenariat</a></li>
                         <li class="{% if app.request.attributes.get('_route') == 'prices' %}active{% endif %}"><a href="{{ path('prices') }}">Tarifs</a></li>
                         <li class="{% if app.request.attributes.get('_route') == 'contact_page' %}active{% endif %}"><a href="{{ path('contact_page') }}">Contact</a></li>

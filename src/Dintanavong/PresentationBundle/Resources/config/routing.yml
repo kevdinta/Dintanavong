@@ -19,3 +19,6 @@ projects:
 deepsense:
     path:    /projets/deepsense
     defaults: { _controller: DintanavongPresentationBundle:Static:index }
+gallery:
+    path:    /gallery
+    defaults: { _controller: DintanavongPresentationBundle:Gallery:index }

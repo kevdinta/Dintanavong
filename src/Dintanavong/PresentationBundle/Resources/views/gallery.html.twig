@@ -1,0 +1,52 @@
+{% extends "DintanavongPresentationBundle::layout.html.twig" %}
+{% block title %}{{ parent() }} Galerie {% endblock %}
+    {% block css %}
+        <link rel="stylesheet" type="text/css" href="{{ asset('materialize/css/materialize.min.css') }}"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/animate.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/blueimp-gallery.min.css')}}">
+    {% endblock %}
+{% block body %}
+    {{ parent() }}
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+    <div class="row container" style="margin-top: 5%;">
+        <div class="col s12 gallery">
+            <div id="links">
+                <a href="https://wallpaperbrowse.com/media/images/pictures-2.jpg" title="Orange" data-gallery>
+                    <img src="https://wallpaperbrowse.com/media/images/pictures-2.jpg" alt="Orange">
+                </a>
+                <a href="https://wallpaperbrowse.com/media/images/pictures-2.jpg" title="Orange" data-gallery>
+                    <img src="https://wallpaperbrowse.com/media/images/pictures-2.jpg" alt="Orange">
+                </a>
+                <a href="https://wallpaperbrowse.com/media/images/pictures-2.jpg" title="Orange" data-gallery>
+                    <img src="https://wallpaperbrowse.com/media/images/pictures-2.jpg" alt="Orange">
+                </a>
+                <a href="https://justifiedgrid.com/wp-content/uploads/life/biking/137646854.jpg" title="Orange" data-gallery>
+                    <img src="https://justifiedgrid.com/wp-content/uploads/life/biking/137646854.jpg" alt="Orange">
+                </a>
+                <a href="https://justifiedgrid.com/wp-content/uploads/life/biking/137646854.jpg" title="Orange" data-gallery>
+                    <img src="https://justifiedgrid.com/wp-content/uploads/life/biking/137646854.jpg" alt="Orange">
+                </a>
+                <a href="https://justifiedgrid.com/wp-content/uploads/life/biking/137646854.jpg" title="Orange" data-gallery>
+                    <img src="https://justifiedgrid.com/wp-content/uploads/life/biking/137646854.jpg" alt="Orange">
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('materialize/js/materialize.min.js') }}"></script>
+    <!--<script src="{{ asset('js/blueimp-gallery.min.js')}}"></script>-->
+    <script src="{{ asset('js/jquery.blueimp-gallery.min.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
+{% endblock %}

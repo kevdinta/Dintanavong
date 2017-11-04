@@ -118,3 +118,6 @@ input#un-mute:checked ~ .mute img {
     z-index: 1;
     display: none;
 }
+.gallery img {
+    width: 33%;
+}
