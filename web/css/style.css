@@ -119,5 +119,22 @@ input#un-mute:checked ~ .mute img {
     display: none;
 }
 .gallery img {
-    width: 33%;
+    width: 100%;
+}
+.block {
+    position: absolute;
+    padding: 5px;
+    width: 280px;
+    border: 1px solid #ddd;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    border-radius: 8px;
+}
+.block:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease-in-out;
+    transform: scale(1.05);
 }

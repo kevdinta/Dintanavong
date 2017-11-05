@@ -29,7 +29,6 @@ $(window).on('load',function() {
         var scrollTrigger = 100,
             backToTop = function () {
                 var scrollTop = $(window).scrollTop();
-                console.log(scrollTop);
                 if (scrollTop > scrollTrigger) {
                     $('.back-to-top').addClass('show');
                 } else {
@@ -113,6 +112,24 @@ $(document).ready(function() {
             })
         });
     }
+    /* image filter */
+    var fActive = '';
+    function filterGroup(group){
+        if(fActive != group){
+            $('.chalatest').filter('.'+group).slideDown();
+            $('.chalatest').filter(':not(.'+group+')').slideUp();
+            fActive = group;
+        }
+    }
+
+    $('.f-group-1').click(function(){ filterGroup('group-1'); });
+    $('.f-group-2').click(function(){ filterGroup('group-2'); });
+    $('.f-group-3').click(function(){ filterGroup('group-3'); });
+
+    $('.f-all').click(function(){
+        $('.chalatest').slideDown();
+        fActive = 'all';
+    });
 });
 function success_submit() {
     // Utilisation de sweet alert
