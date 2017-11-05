@@ -124,7 +124,7 @@ input#un-mute:checked ~ .mute img {
 .block {
     position: absolute;
     padding: 5px;
-    width: 280px;
+    width: 270px;
     border: 1px solid #ddd;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -132,6 +132,7 @@ input#un-mute:checked ~ .mute img {
     -ms-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     border-radius: 8px;
+    display: none;
 }
 .block:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);

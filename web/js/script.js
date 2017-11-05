@@ -4,18 +4,18 @@
 
 /* Check if content loaded */
 $(window).on('load',function() {
-    /* Fait disparaitre le chargement */
+    /* remove loader */
     $("#loader").fadeOut();
     $("#loaderDp").fadeOut(5000);
     $("#fullpage").fadeIn(2000);
     $("#sound_block").fadeIn(2000);
-    /* Affiche le contenu des pages web avec un effet fade */
+    /* display pages */
     $('.pages').fadeIn(4000);
     $('#footer').fadeIn(4000);
-    /* Check s'il y a un input avec l'id submit */
+    /* Check if exists */
     if ($('#submit').length) {
         $('#submit').on('click', function () {
-            /* Retarde le submit... à travailler... */
+            /* Submit delay, work in progress */
             $('form').submit( function(event) {
                 var formId = this.id,
                     form = this;
@@ -24,6 +24,14 @@ $(window).on('load',function() {
             });
         });
     }
+    /* gallery display after loaded*/
+    if ($('.block').length) {
+        $('.block').fadeIn();
+    }
+    /* scroll reveal work in progress... */
+    $(window).on('scroll', function () {
+        var posY = $(window).scrollTop();
+    });
     /* back to top */
     if ($('.back-to-top').length) {
         var scrollTrigger = 100,
@@ -56,11 +64,10 @@ $(window).on('load',function() {
         blueimp.Gallery(links, options);
     });
 });
-
 $(document).ready(function() {
      // Display carousel
      $('.carousel.carousel-slider').carousel({fullWidth: true});
-    // // Initialize collapse button
+     // Initialize collapse button
      $(".se_connecter").sideNav();
      $('.parallax').parallax();
      $('select').material_select();
@@ -100,11 +107,9 @@ $(document).ready(function() {
         $(".section").each(function(i){
             $(this).css("background", "url("+bg[i]+")");
         });
-
         $(function () {
             $('.tlt').textillate();
-        })
-
+        });
         $('#un-mute').on('click', function () {
             // Mute - Unmute
             $.each($('audio'), function (i, val) {
@@ -112,27 +117,9 @@ $(document).ready(function() {
             })
         });
     }
-    /* image filter */
-    var fActive = '';
-    function filterGroup(group){
-        if(fActive != group){
-            $('.chalatest').filter('.'+group).slideDown();
-            $('.chalatest').filter(':not(.'+group+')').slideUp();
-            fActive = group;
-        }
-    }
-
-    $('.f-group-1').click(function(){ filterGroup('group-1'); });
-    $('.f-group-2').click(function(){ filterGroup('group-2'); });
-    $('.f-group-3').click(function(){ filterGroup('group-3'); });
-
-    $('.f-all').click(function(){
-        $('.chalatest').slideDown();
-        fActive = 'all';
-    });
 });
 function success_submit() {
-    // Utilisation de sweet alert
+    // sw's utilisation
     swal({
         title: 'Message envoyé !',
         text: "Wolpertinger s'assure de vous répondre dans les plus brefs délais",
