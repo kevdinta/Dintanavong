@@ -159,17 +159,6 @@
             }
             positionBlocks();
         }
-        function setupBlocks() {
-            windowWidth = $(window).width();
-            colWidth = $('.block').outerWidth();
-            blocks = [];
-            //console.log(blocks);
-            colCount = Math.floor(windowWidth/(colWidth+margin*2));
-            for(var i=0;i<colCount;i++){
-                blocks.push(margin);
-            }
-            positionBlocks();
-        }
         function positionBlocks() {
             $('.block').each(function(){
                 var min = Array.min(blocks);
